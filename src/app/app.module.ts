@@ -10,6 +10,9 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CmpNotFoundComponent } from './components/cmp-not-found/cmp-not-found.component';
+import { TodoFormularComponent } from './components/todo-formular/todo-formular.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { CmpNotFoundComponent } from './components/cmp-not-found/cmp-not-found.c
     ImpressumComponent,
     DatenschutzComponent,
     DashboardComponent,
-    CmpNotFoundComponent
+    CmpNotFoundComponent,
+    TodoFormularComponent,
+    NavbarComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
