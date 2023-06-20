@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="card" style="width: 18rem; margin-bottom: 8px">
+      <div class="card-body">
+        <h4 class="card-title"> {{ toDo.title }}</h4>
+          <p class="card-text">Status {{ toDo.done }}</p>
+          <p class="card-text">ID {{ toDo.id }}</p>
+        <button class="btn btn-primary" (click)="deleteToDo()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
